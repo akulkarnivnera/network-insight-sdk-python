@@ -20,6 +20,7 @@ import logging
 from six import iteritems
 from six.moves import http_client as httplib
 
+NIAAS_DEPLOYMENT_TYPE = "niaas"
 
 def singleton(cls, *args, **kw):
     instances = {}
@@ -216,7 +217,7 @@ class Configuration(object):
                 },
 
         }
-        if self.deployment_type == "niaas":
+        if self.deployment_type == NIAAS_DEPLOYMENT_TYPE:
             authorization_settings = {
                 'ApiKeyAuth':
                     {
