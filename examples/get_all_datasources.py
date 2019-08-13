@@ -130,7 +130,7 @@ def main(api_client, args):
                                                                                           response))
                     data.append(data_dict)
             except ApiException as e:
-                print("Failed getting list of data source type: {} : Error : {} ".format(data_source_type, json.loads(e.body)))
+                print(("Failed getting list of data source type: {} : Error : {} ".format(data_source_type, json.loads(e.body))))
         writer.writerows(data)
 
 def parse_arguments():
