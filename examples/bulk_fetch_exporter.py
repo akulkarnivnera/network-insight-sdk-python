@@ -8,6 +8,7 @@
 # Copyright 2019 VMware, Inc.
 # SPDX-License-Identifier: GPL-2.0-or-later
 
+
 import time
 import csv
 import logging
